@@ -1,3 +1,4 @@
+import '../public/styles.css';
 import { App } from './app';
 
 async function bootstrap(): Promise<void> {
