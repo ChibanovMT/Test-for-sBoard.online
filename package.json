@@ -1,0 +1,23 @@
+{
+  "name": "pixi-skia-pdf-demo",
+  "version": "1.0.0",
+  "description": "Pixi.js + Skia (CanvasKit) renderer with vector PDF export",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "postinstall": "node scripts/copy-wasm.cjs && node scripts/generate-logo.cjs"
+  },
+  "keywords": ["pixi", "skia", "canvaskit", "pdf", "typescript"],
+  "license": "MIT",
+  "dependencies": {
+    "html2pdf-skia": "^0.1.4",
+    "pixi.js-legacy": "^7.2.4"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.2",
+    "typescript": "^6.0.3",
+    "vite": "^8.0.16"
+  }
+}

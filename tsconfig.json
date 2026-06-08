@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "paths": {
+      "@canvaskit-pdf": ["./node_modules/html2pdf-skia/node_modules/@rollerbird/canvaskit-wasm-pdf/bin/canvaskit-pdf.js"],
+      "@rollerbird/canvaskit-wasm-pdf/types": ["./node_modules/html2pdf-skia/node_modules/@rollerbird/canvaskit-wasm-pdf/types/index.d.ts"]
+    }
+  },
+  "include": ["src"]
+}

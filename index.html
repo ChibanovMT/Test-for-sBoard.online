@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pixi + Skia PDF Demo</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Pixi.js + Skia (CanvasKit)</h1>
+      <p class="subtitle">
+        Двойной рендер сцены: Pixi (Canvas) и Skia. Векторный экспорт в PDF.
+      </p>
+    </header>
+
+    <section class="toolbar">
+      <button id="btn-random" type="button">Случайная фигура</button>
+      <button id="btn-scene-prev" type="button">← Сцена</button>
+      <button id="btn-scene-next" type="button">Сцена →</button>
+      <button id="btn-export-pdf" type="button" class="primary">Экспорт PDF</button>
+      <span id="status" class="status" aria-live="polite"></span>
+    </section>
+
+    <section class="canvases">
+      <div class="canvas-panel">
+        <h2>Pixi.js (forceCanvas)</h2>
+        <div id="pixi-host" class="canvas-host"></div>
+      </div>
+      <div class="canvas-panel">
+        <h2>Skia (CanvasKit)</h2>
+        <canvas id="skia-canvas" width="640" height="480"></canvas>
+      </div>
+    </section>
+
+    <section class="log-panel">
+      <h3>События pointerDown / pointerUp</h3>
+      <pre id="event-log">Кликните по интерактивным фигурам (g1, g2, star…) на Pixi- или Skia-canvas.</pre>
+    </section>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
