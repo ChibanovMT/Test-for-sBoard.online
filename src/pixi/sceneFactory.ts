@@ -112,7 +112,7 @@ function makeInteractive(object: Graphics | Sprite, name: string): void {
 }
 
 async function loadLogoTexture(): Promise<Texture> {
-  return Assets.load('/assets/logo.png');
+  return Assets.load(`${import.meta.env.BASE_URL}assets/logo.png`);
 }
 
 /** Добавляет случайную фигуру или линию в контейнер. */

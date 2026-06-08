@@ -16,6 +16,19 @@ npm run dev
 
 Откройте http://localhost:3000
 
+## Деплой на GitHub Pages
+
+Сайт публикуется в подпапку репозитория:  
+https://chibanovmt.github.io/Test-for-sBoard.online/
+
+```bash
+npm run build
+# содержимое папки dist/ → в ветку gh-pages или в Settings → Pages
+```
+
+В `vite.config.ts` для production задан `base: '/Test-for-sBoard.online/'`.  
+Если переименуете репозиторий — обновите этот путь.
+
 ## Скрипты
 
 | Команда | Описание |

@@ -10,7 +10,7 @@ let canvasKitPromise: Promise<CanvasKit> | null = null;
 export function initCanvasKit(): Promise<CanvasKit> {
   if (!canvasKitPromise) {
     canvasKitPromise = loadCanvasKit({
-      wasmBinaryUrl: '/canvaskit-pdf.wasm',
+      wasmBinaryUrl: `${import.meta.env.BASE_URL}canvaskit-pdf.wasm`,
     });
   }
   return canvasKitPromise;
